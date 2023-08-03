@@ -1,0 +1,8 @@
+.section-container {
+  @include flexStyle(row,center,center);
+  height: 200px;
+
+  h1 {
+    font-size: 2rem;
+  }
+}

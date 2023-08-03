@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#68d597"></meta>
+
+    <title>WHAT THE FARM : E-Commerce</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-container">
+                  <nav class="logo">
+        <a href="#">WHAT THE FARM</a>
+        <img
+          src="/pics/logo/wtf-logo.png"
+          alt="WHAT THE FARM LOGO"
+          width="25"
+        />
+      </nav>
+      <div class="cart">
+        <a href="#" class="cart-btn"
+          ><img src="/pics/icon/cart.png" alt="WHAT THE FARM CART" width="30"
+        /></a>
+        <div class="quantity-cart">0</div>
+      </div>
+    </header>
+    
+    <div class="fade-background-sidebar"></div>
+    <section class="get-wave-top"></section>
+
+    <!-- Sidebar -->
+    <aside class="aside-container">
+      <div class="menu-top">
+        <h1>ตะกร้าสินค้า</h1>
+        <button class="btn-close">
+          <i class="fa-solid fa-circle-xmark fa-2xl" style="color: #ed3131"></i>
+        </button>
+      </div>
+      <div class="aside-cart-item"></div>
+      <div class="aside-cart-result">
+        <h1>ราคารวมทั้งสิ้น</h1>
+        <span>0฿</span>
+      </div>
+      <div class="aside-cart-checkout">
+        <h1>ชำระเงิน</h1>
+      </div>
+    </aside>
+
+    <!-- Section : Hero -->
+    <section class="section-container">
+      <h1 id="text-typing"></h1>
+    </section>
+
+    <!-- Section : Products -->
+    <section class="products-container">
+      <div class="sorting-price-container">
+        <select id="sorting-price">
+          <option disabled>การเรียงแสดงสินค้า</option>
+          <option value="cheap">ราคาน้อยไปมาก</option>
+          <option value="expensive">ราคามากไปน้อย</option>
+          <option disabled>ประเภทของสินค้า</option>
+          <option value="all">แสดงทั้งหมด (ALL)</option>
+          <option value="fejka">FEJKA</option>
+          <option value="skycka">SKYCKA</option>
+        </select>
+      </div>
+      <!-- <div class="filter-btns">
+        <div class="filter-group" id="filter-group-type">
+          <button type="button" class="btn" value="btn-type">ประเภท</button>
+          <div class="modal-group" id="modal-type" data-group-type="modal-type">
+            <h5>ประเภท</h5>
+            <div class="type-fejka">
+              <input type="checkbox" class="input-fejka" id="fejka" />
+              <label for="fejka">FEJKA</label>
+            </div>
+            <div class="type-skycka">
+              <input type="checkbox" class="input-skycka" id="skycka" />
+              <label for="skycka">SKYCKA</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-group" id="filter-group-sort">
+          <button type="button" class="btn" value="btn-sort">เรียงลำดับ</button>
+          <div class="modal-group" id="modal-sort" data-group-type="modal-type">
+            <h5>เรียงลำดับ</h5>
+            <div class="type-cheap-price">
+              <input
+                type="checkbox"
+                class="input-cheap-price"
+                id="cheap-price"
+              />
+              <label for="cheap-price">ราคาน้อยไปมาก</label>
+            </div>
+            <div class="type-expensive">
+              <input type="checkbox" class="input-expensive" id="expensive" />
+              <label for="expensive">ราคามากไปน้อย</label>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="products-grid-container"></div>
+    </section>
+
+    <!-- Section : Text Logo  -->
+    <section class="logo-container">
+      <a href="#"
+        >WHAT THE FARM
+        <img
+          src="/pics/logo/wtf-logo.png"
+          alt="WHAT THE FARM LOGO"
+          width="25"
+        />
+      </a>
+    </section>
+    <!-- Footer : Contacts -->
+    <footer class="footer-container">
+      <div class="footer-btns-group">
+        <a href="#" class="icon-facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="icon-line" target="_blank"><i class="fa-brands fa-line"></i></a>
+        <a href="#" class="icon-twitter" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a97ef9e5a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="typing-js.js"></script>
+  </body>
+</html>

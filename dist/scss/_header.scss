@@ -1,0 +1,75 @@
+.header-container {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 1rem 10%;
+  background: $white;
+  @include flexStyle(row, space-between, center);
+}
+
+.logo {
+  position: relative;
+  z-index: 9999;
+  margin-top: 14px;
+
+  a {
+    font-size: 1.5rem;
+    color: $black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  img {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: -1;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+  }
+}
+
+.cart {
+  position: relative;
+  margin-top: 10px;
+  cursor: pointer;
+
+  img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .quantity-cart {
+    background: $white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+
+.get-wave-top {
+  background: url(/pics/icon/wave-on-top.svg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 150px;
+  margin-top: 60px;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

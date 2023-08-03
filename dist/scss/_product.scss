@@ -1,0 +1,256 @@
+.products-container {
+  @include container;
+  border-top: 2px dashed $black;
+  border-bottom: 2px dashed $black;
+  overflow: hidden;
+}
+
+.products-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+  place-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+
+  .product-list {
+    @include flexStyle(column, center, center);
+    position: relative;
+    width: 252px;
+    height: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    animation: fadeIn 2s;
+
+    img {
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 0.875rem;
+      font-weight: 350;
+    }
+
+    span {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .buy-now {
+      all: unset;
+      color: $white;
+      cursor: pointer;
+      background: $green;
+      font-weight: bold;
+      width: 100%;
+      height: 32px;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+      margin: 5px 0;
+      @include transitionAll;
+
+      &.buy-now:active {
+        background: $red;
+      }
+      &.buy-now:hover {
+        background: $green2;
+      }
+    }
+
+    .like-btn {
+      all: unset;
+      width: 35px;
+      height: 35px;
+      background: $grey;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: $red;
+      opacity: 0.5;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .product-detail {
+      @include flexStyle(column, center, flex-start);
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+}
+
+.filter-btns {
+  padding-left: 1rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999;
+  .btn {
+    all: unset;
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    background: $green;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
+    cursor: pointer;
+    color: $white;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    margin: 0.2rem 0;
+    @include transitionAll;
+
+    &.btn:hover {
+      background: $green2;
+    }
+  }
+
+  .modal-group {
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1rem 2rem;
+    position: fixed;
+    z-index: 1;
+    right: 90px;
+    bottom: 75px;
+  }
+  h5 {
+    text-align: center;
+  }
+  .input-all,
+  .input-fejka,
+  .input-skycka {
+    position: absolute;
+    opacity: 0;
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    // Box.
+    & + label:before {
+      content: "";
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: $green;
+      border-radius: 4px;
+    }
+
+    // Box hover
+    &:hover + label:before {
+      background: $green;
+    }
+
+    // Box checked
+    &:checked + label:before {
+      background: $green;
+    }
+
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white,
+        4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.sorting-price-container {
+  @include flexStyle(column, center, flex-end);
+  padding-right: 20px;
+  select {
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: $green;
+    color: $white;
+    padding: 0.2rem;
+    border-radius: 2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+  }
+
+  option {
+    &:disabled {
+      color: $white !important;
+      font-weight: bolder;
+    }
+
+  }
+}
+
+#modal-type {
+  visibility: hidden;
+}
+
+.open-modal {
+  visibility: visible !important;
+  animation: fadeIn 1s;
+}
+
+.like-active {
+  opacity: 1 !important;
+}
+
+.img-float {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 10px solid red;
+}
+
+@media screen and (max-width: 600px) {
+  .filter-btn-group {
+    text-align: center;
+  }
+  .cart-item {
+    padding: 0.5rem !important;
+  }
+  .cart-item .quantity-item {
+    padding-left: 0 !important;
+    width: 40px !important;
+    height: 35px !important;
+  }
+
+  .cart-detail h1 {
+    font-size: 1rem !important;
+  }
+
+  .cart-detail p {
+    font-size: 0.75rem !important;
+  }
+}

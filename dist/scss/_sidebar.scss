@@ -1,0 +1,164 @@
+.aside-container {
+  width: 500px;
+  max-width: 100%;
+  height: 100%;
+  background: $grey;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: -500px;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.5s ease-in-out;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $grey;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $grey2;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $grey3;
+  }
+}
+
+.aside-active {
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.btn-close {
+  all: unset;
+  cursor: pointer;
+}
+
+.aside-cart-item {
+  height: 80vh;
+  overflow: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $grey2;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+
+  .quantity-item {
+    width: 75px;
+    height: 35px;
+    background: $grey3;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    text-align: center;
+    padding-left: 0.75rem;
+    font-family: inherit;
+    font-weight: bold;
+  }
+
+  .del-item {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: $red;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: $white;
+    box-shadow: 1px 1px 4px rgba(97, 97, 97, 0.25);
+  }
+
+  img {
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.cart-detail {
+  h1 {
+    font-size: 1.25rem;
+  }
+  p,
+  span {
+    font-size: 0.875rem;
+  }
+}
+
+.menu-bottom {
+  background: $green;
+  height: 10vh;
+}
+
+.aside-cart-result {
+  padding: 0 1rem;
+  border-top: 1px dashed $black;
+  height: 10vh;
+  @include flexStyle(row, space-between, center);
+
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.aside-cart-checkout {
+  height: 10vh;
+  background: $green;
+  @include flexStyle(row, center, center);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: $green2;
+  }
+  h1 {
+    color: $white;
+  }
+}
+
+.fade-background-sidebar {
+  position: absolute;
+  background: $black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  opacity: 0.5;
+  display: none;
+}
+
+.fade-background-sidebar-active {
+  pointer-events: auto;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .aside-container {
+    width: 100%;
+  }
+}

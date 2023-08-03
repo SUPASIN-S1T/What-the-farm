@@ -1,0 +1,139 @@
+{
+    "trees": [
+        {
+            "tree_id": 1,
+            "tree_name": "ไม้ไผ่",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, 23 ซม.",
+            "tree_price": 2390,
+            "tree_stock": 5,
+            "tree_pics": "./pics/tree/tree-1.png"
+        },
+        {
+            "tree_id": 2,
+            "tree_name": "ต้น Weeping fig",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง,ขนาด 12 ซม.",
+            "tree_price": 499,
+            "tree_stock": 10,
+            "tree_pics": "./pics/tree/tree-2.png"
+        },
+        {
+            "tree_id": 3,
+            "tree_name": "ต้น Succulent",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 6 ซม.",
+            "tree_price": 39,
+            "tree_stock": 111,
+            "tree_pics": "./pics/tree/tree-3.png"
+        },
+        {
+            "tree_id": 4,
+            "tree_name": "ต้นเกล็ดกระโห้",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 12 ซม.",
+            "tree_price": 279,
+            "tree_stock": 43,
+            "tree_pics": "./pics/tree/tree-4.png"
+        },
+        {
+            "tree_id": 5,
+            "tree_name": "ต้นเบบี้เทียร์ส",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 9 ซม.",
+            "tree_price": 149,
+            "tree_stock": 12,
+            "tree_pics": "./pics/tree/tree-5.png"
+        },
+        {
+            "tree_id": 6,
+            "tree_name": "ต้น Geranium",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 12 ซม.",
+            "tree_price": 499,
+            "tree_stock": 500,
+            "tree_pics": "./pics/tree/tree-6.png"
+        },
+        {
+            "tree_id": 7,
+            "tree_name": "ต้นก้ามปูหลุด",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 9 ซม.",
+            "tree_price": 149,
+            "tree_stock": 4,
+            "tree_pics": "./pics/tree/tree-7.png"
+        },
+        {
+            "tree_id": 8,
+            "tree_name": "ต้น Succulent",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 9 ซม.",
+            "tree_price": 149,
+            "tree_stock": 9,
+            "tree_pics": "./pics/tree/tree-8.png"
+        },
+        {
+            "tree_id": 9,
+            "tree_name": "ต้นเฟิร์นเขากวาง",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 9 ซม.",
+            "tree_price": 199,
+            "tree_stock": 122,
+            "tree_pics": "./pics/tree/tree-9.png"
+        },
+        {
+            "tree_id": 10,
+            "tree_name": "ต้น Geranium ชมพู",
+            "tree_type": "fejka",
+            "tree_detail": "ไม้ประดิษฐ์ในกระถาง, ขนาด 12 ซม.",
+            "tree_price": 499,
+            "tree_stock": 53,
+            "tree_pics": "./pics/tree/tree-10.png"
+        },
+        {
+            "tree_id": 11,
+            "tree_name": "ต้น Hydrangea",
+            "tree_type": "skycka",
+            "tree_detail": "ดอกไม้ประดิษฐ์, ขนาด 45 ซม.",
+            "tree_price": 79,
+            "tree_stock": 44,
+            "tree_pics": "./pics/tree/tree-11.png"
+        },
+        {
+            "tree_id": 12,
+            "tree_name": "ต้น Hydrangea",
+            "tree_type": "skycka",
+            "tree_detail": "ดอกไม้ประดิษฐ์, ขนาด 76 ซม.",
+            "tree_price": 199,
+            "tree_stock": 98,
+            "tree_pics": "./pics/tree/tree-12.png"
+        },
+        {
+            "tree_id": 13,
+            "tree_name": "ต้นมะกอก",
+            "tree_type": "skycka",
+            "tree_detail": "กิ่งไม้ประดิษฐ์, ขนาด 75 ซม.",
+            "tree_price": 149,
+            "tree_stock": 111,
+            "tree_pics": "./pics/tree/tree-13.png"
+        },
+        {
+            "tree_id": 14,
+            "tree_name": "ต้น Ivy เขียว",
+            "tree_type": "skycka",
+            "tree_detail": "ไม้ประดิษฐ์, ขนาด 1.5 ม.",
+            "tree_price": 99,
+            "tree_stock": 52,
+            "tree_pics": "./pics/tree/tree-14.png"
+        },
+        {
+            "tree_id": 15,
+            "tree_name": "ต้นด๊อกวู๊ด ชมพู",
+            "tree_type": "skycka",
+            "tree_detail": "ดอกไม้ประดิษฐ์, ขนาด 56 ซม.",
+            "tree_price": 79,
+            "tree_stock": 3,
+            "tree_pics": "./pics/tree/tree-15.png"
+        }
+    ]
+}
